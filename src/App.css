@@ -4,10 +4,51 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
-img {
-  max-width: 100%;
-  height: auto;
+.header-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: space-between; /* Espacio entre el logo y el título */
+  padding: 0 2rem; /* Ajusta el relleno según sea necesario */
+  position: relative;
 }
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-container img {
+  width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.felysoft {
+  left: 200px;
+  font-size: 30px; /* Tamaño de fuente fijo */
+}
+
+
+.home-bannerImage-container img {
+  width: 1000px !important; /* Ajusta el ancho específico a 1000px */
+  height: 1200px !important; /* Ajusta la altura específica a 750px */
+}
+
+.home-image-section {
+  position: relative;
+  width: 1000px; /* Ajusta el ancho según necesites */
+  height: 500px; /* Ajusta la altura según necesites */
+  overflow: hidden;
+}
+.home-image-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir el contenedor sin recortar de manera desigual */
+}
+
+
 .App {
   min-height: 100vh;
   width: 85vw;
@@ -41,7 +82,8 @@ nav {
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: white;
+  background-color: rgb(52, 117, 202);
+  color: #f6f6f6;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -54,6 +96,7 @@ nav {
   font-size: 1.15rem;
 }
 .primary-button:hover {
+  color: #484848;
   background-color: rgb(234, 234, 234);
 }
 .navbar-menu-container svg {
@@ -84,7 +127,7 @@ nav {
   align-items: flex-start;
 }
 .primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(3rem, 4vw, 3rem);
   color: #4c4c4c;
   /* line-height: 5rem; */
   max-width: 600px;
@@ -97,7 +140,7 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: rgb(52, 117, 202);
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -115,7 +158,8 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  color: #484848;
+  background-color: rgb(221, 221, 221);
 }
 .about-section-container {
   margin-top: 20rem;
@@ -307,7 +351,13 @@ nav {
   font-weight: 600;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  .header-container {
+    justify-content: center; /* Centra el contenido en pantallas medianas */
+  }
+  .felysoft {
+    font-size: 30px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
   .navbar-links-container a {
     margin-right: 1rem;
     font-size: 1rem;
@@ -315,14 +365,20 @@ nav {
   .primary-button {
     font-size: 1rem;
   }
-  .home-bannerImage-container {
-    max-width: 600px;
-  }
+  
 }
+
 @media (max-width: 800px) {
-  .nav-logo-container {
-    max-width: 140px;
+  .header-container {
+    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
   }
+  .felysoft {
+    font-size: 30px; /* Ajusta el tamaño de la fuente si es necesario */
+    margin-top: 1rem; /* Añade espacio entre el logo y el título */
+  }
+  
   .navbar-links-container {
     display: none;
   }
@@ -421,6 +477,9 @@ nav {
   }
 }
 @media (max-width: 600px) {
+  .felysoft {
+    font-size: 30px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+  }
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;

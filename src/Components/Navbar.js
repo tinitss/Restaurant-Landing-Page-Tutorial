@@ -21,11 +21,11 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
+      text: "AtencionCliente",
       icon: <HomeIcon />,
     },
     {
-      text: "About",
+      text: "Ayuda",
       icon: <InfoIcon />,
     },
     {
@@ -46,15 +46,18 @@ const Navbar = () => {
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
+      <div className="felysoft">
+        <h1>FELYSOFT</h1>
+      </div>
+
+
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
+        <a href="">Atención al cliente</a>
+        <a href="">¿Necesitas ayuda?</a>
+        {/* <a href="">
           <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <button className="primary-button">Bookings Now</button>
+        </a> */}
+        <button className="primary-button">Iniciar sesión</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

@@ -14,14 +14,13 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Your Favourite Food Delivered Hot & Fresh
+          Digitaliza y optimiza la gestión de tu negocio sin complicaciones.
           </h1>
           <p className="primary-text">
-            Healthy switcher chefs do all the prep work, like peeding, chopping
-            & marinating, so you can cook a fresh food.
+          Transforma tu negocio con Felysoft: gestiona inventarios, ingresos, servicios y reservas de libros de manera eficiente y sin complicaciones. ¡Empieza hoy mismo!
           </p>
           <button className="secondary-button">
-            Order Now <FiArrowRight />{" "}
+            Empezar <FiArrowRight />{" "}
           </button>
         </div>
         <div className="home-image-section">
