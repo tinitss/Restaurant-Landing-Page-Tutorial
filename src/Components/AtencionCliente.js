@@ -7,21 +7,19 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
+    <div className="contact-page-wrapper">
+      <h1 className="primary-heading">Atención al cliente</h1>
+
+      <div className="footer-wrapper">
       <div className="footer-section-one">
-        <div className="footer-logo-container">
+        {/* <div className="footer-logo-container">
           <img src={Logo} alt="" />
-        </div>
-        <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
-        </div>
+        </div> */}
       </div>
+      
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Qualtiy</span>
+          <span className="horarios">Horarios de atención</span>
           <span>Help</span>
           <span>Share</span>
           <span>Carrers</span>
@@ -39,6 +37,14 @@ const Footer = () => {
           <span>Privacy Policy</span>
         </div>
       </div>
+    </div>
+      <div className="footer-icons">
+          <BsTwitter />
+          <SiLinkedin />
+          <BsYoutube />
+          <FaFacebookF />
+        </div>
+    
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import AboutBackground from "../Assets/about-background.png";
 import AboutBackgroundImage from "../Assets/about-background-image.png";
-import { BsFillPlayCircleFill } from "react-icons/bs";
+import { FiArrowRight } from "react-icons/fi";
 
 const About = () => {
   return (
@@ -13,23 +13,19 @@ const About = () => {
         <img src={AboutBackgroundImage} alt="" />
       </div>
       <div className="about-section-text-container">
-        <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
-          Food Is An Important Part Of A Balanced Diet
+        Visión clara de tus finanzas: informes detallados para decisiones estratégicas.
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
-        </p>
-        <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+        Gestiona tus ingresos con datos financieros claros y accesibles: análisis profundos y reportes que facilitan la toma de decisiones.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button">Learn More</button>
-          <button className="watch-video-button">
-            <BsFillPlayCircleFill /> Watch Video
+        <button className="secondary-button">
+            Empezar <FiArrowRight />{" "}
           </button>
+          {/* <button className="watch-video-button">
+            <BsFillPlayCircleFill /> Watch Video
+          </button> */}
         </div>
       </div>
     </div>

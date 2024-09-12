@@ -14,10 +14,10 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-          Digitaliza y optimiza la gestión de tu negocio sin complicaciones.
+          Digitaliza y optimiza la gestión de tu inventario sin complicaciones.
           </h1>
           <p className="primary-text">
-          Transforma tu negocio con Felysoft: gestiona inventarios, ingresos, servicios y reservas de libros de manera eficiente y sin complicaciones. ¡Empieza hoy mismo!
+          Administra tu inventario con precisión y sin esfuerzo: controla existencias, evita faltantes y optimiza tu flujo de productos.
           </p>
           <button className="secondary-button">
             Empezar <FiArrowRight />{" "}
