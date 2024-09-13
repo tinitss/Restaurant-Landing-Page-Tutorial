@@ -16,6 +16,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import "../css/Navbar.css"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -50,8 +51,17 @@ const Navbar = () => {
         <h1>FELYSOFT</h1>
       </div>
 
-
       <div className="navbar-links-container">
+      <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("desarrolladores").scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          ¿Quiénes somos?
+        </a>
+
         <a
           href="#"
           onClick={(e) => {
@@ -61,9 +71,7 @@ const Navbar = () => {
         >
           Atención al cliente
         </a>
-        {/* <a href="">
-          <BsCart2 className="navbar-cart-icon" />
-        </a> */}
+        
         <button className="primary-button">Iniciar sesión</button>
       </div>
       <div className="navbar-menu-container">

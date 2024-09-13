@@ -1,0 +1,99 @@
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info-section {
+    flex: 1;
+    margin: 0 3rem;
+}
+
+.horarios {
+    font-size: 1.2rem;
+    /* Ajusta el tamaño de fuente según sea necesario */
+    margin: 1rem 0;
+    /* Añade espacio arriba y abajo */
+    color: #4c4c4c;
+    /* Ajusta el color según el diseño */
+    text-align: center;
+    /* Centra el texto dentro del elemento */
+    justify-content: space-between;
+}
+
+.footer-section-two {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Dos columnas: una para las etiquetas, otra para los valores */
+    gap: 1rem;
+    /* Espacio entre columnas */
+    margin-bottom: 2rem;
+    /* Añade espacio abajo si es necesario */
+    left: auto;
+}
+
+.footer-section-two {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre las columnas */
+    /* Alinea verticalmente los elementos al centro */
+}
+
+.footer-section-two .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    /* Espacio entre filas dentro de cada columna */
+}
+
+/* Añadir margen a las columnas para reducir el espacio entre ellas */
+.footer-section-two .footer-section-columns:not(:last-child) {
+    margin-right: 0.5rem;
+    /* Ajusta este valor para reducir el espacio entre columnas */
+}
+
+.footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+}
+
+.footer-section-columns span {
+    margin: 0.5rem 0;
+    /* Añade espacio vertical entre los elementos */
+    color: #6a6a6a;
+    /* Ajusta el color según el diseño */
+}
+
+.span-terms {
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.span-terms span {
+    margin: -3px 0;
+    /* Ajusta el margen superior e inferior para reducir el espacio */
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente los íconos */
+    align-items: center;
+    /* Alinea verticalmente los íconos si es necesario */
+    margin-top: 2.5rem;
+}
+
+.footer-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: #585858;
+}
+
+.footer-icons svg:last-child {
+    margin-right: 0;
+}

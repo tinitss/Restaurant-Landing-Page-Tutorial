@@ -1,0 +1,44 @@
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-container img {
+    width: 50px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    /* Mantiene la proporción del logo */
+}
+
+.felysoft {
+    position: absolute;
+    left: 70px;
+    font-size: 30px;
+    justify-content: flex-start; /* Alinea el logo hacia la izquierda */
+    /* Tamaño de fuente fijo */
+}
+
+.navbar-links-container {
+    margin-left: 400px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.navbar-links-container a{
+    margin-right: 2rem;
+    text-decoration: none; /* Elimina el subrayado */
+    color: black; /* Asegura que el color sea negro */
+    font-weight: inherit; /* Hereda el font-weight del contenedor */
+}
+
+.navbar-menu-container {
+    display: none;
+}
+
+
+.navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}

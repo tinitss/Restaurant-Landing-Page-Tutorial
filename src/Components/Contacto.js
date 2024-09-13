@@ -1,4 +1,6 @@
 import React from "react";
+import "../css/Contacto.css";
+
 
 const Contact = () => {
   return (
@@ -8,7 +10,6 @@ const Contact = () => {
         Deja tus datos y nos pondremos en contacto contigo, buen día.
       </p>
       <div className="contact-form-container">
-
         <input type="text" placeholder="juanito@gmail.com" />
         <button className="secondary-button">Enviar</button>
       </div>

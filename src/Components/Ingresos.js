@@ -1,8 +1,9 @@
 import React from "react";
-import AboutBackground from "../Assets/Fondos/Fondo1.png";
-import AboutBackgroundImage from "../Assets/Imagenes_Sistema/InvetarioProductos.png";
+import AboutBackground from "../Assets/Fondos/Fondo2.png";
+import AboutBackgroundImage from "../Assets/Imagenes_Sistema/Ingresos_estadisticas.png";
 import "../css/Ingresos.css";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowLeft } from "react-icons/fi";
+
 
 const About = () => {
   return (
@@ -14,19 +15,16 @@ const About = () => {
         <img src={AboutBackgroundImage} alt="" />
       </div>
       <div className="about-section-text-container">
-        <h1 className="primary-heading">
-        Visión clara de tus finanzas: informes detallados para decisiones estratégicas.
+        <h1 className="primary-heading-ingresos">
+          Visión clara de tus finanzas, informes detallados para decisiones estratégicas.
         </h1>
-        <p className="primary-text">
-        Gestiona tus ingresos con datos financieros claros y accesibles: análisis profundos y reportes que facilitan la toma de decisiones.
+        <p className="primary-text-ingresos">
+          Gestiona tus ingresos con datos financieros claros y accesibles: análisis profundos y reportes que facilitan la toma de decisiones.
         </p>
-        <div className="about-buttons-container">
-        <button className="secondary-button">
-            Empezar <FiArrowRight />{" "}
+        <div className="secondary-button-ingresos">
+          <button className="secondary-button-ingreso">
+          <FiArrowLeft />{" "} Empezar 
           </button>
-          {/* <button className="watch-video-button">
-            <BsFillPlayCircleFill /> Watch Video
-          </button> */}
         </div>
       </div>
     </div>

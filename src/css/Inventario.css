@@ -1,44 +1,80 @@
 .home-banner-container {
+    display: flex; /* Usar flexbox para distribuir el espacio */
+    padding-top: 1rem;
     position: relative;
-    display: flex;
-    padding-top: 3rem;
+    width: 100%; /* Asegúrate de que el contenedor principal ocupe todo el ancho disponible */
+    height: 500px; /* Ajusta la altura según tus necesidades */
 }
 
 .home-bannerImage-container img {
     width: 1000px !important;
-    /* Ajusta el ancho específico a 1000px */
-    height: 1200px !important;
-    /* Ajusta la altura específica a 750px */
+    height: 1000px !important;
+    transform: rotate(-1deg); /* Rotar la imagen en 10 grados */
 }
 
 .home-bannerImage-container {
     position: absolute;
-    top: -100px;
-    right: -170px;
+    top: -330px;
+    right: 100px;
     z-index: -2;
     max-width: 700px;
 }
 
-.home-image-section {
+.home-text-section {
+    max-width: 35%;
+    width: 35%;
+    position: absolute;
+    margin-top: 20px; /* Ajusta el valor según lo necesites */
+    right: 1400px;
+
+}
+
+.primary-heading-inventario {
     position: relative;
-    width: 1000px;
-    /* Ajusta el ancho según necesites */
-    height: 500px;
-    /* Ajusta la altura según necesites */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Define un ancho específico */
+    font-size: 50px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Asegura que el texto sea más grueso */
+    left: 200px;
+    top: 40px;
+}
+
+.primary-text-inventario{
+    position: relative;
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Define un ancho específico */
+    font-size: 26px; /* Aumenta el tamaño de la fuente */
+    left: 210px;
+    top: 40px;
+
+}
+
+.secondary-button-inventario {
+    position: relative;
+    margin-bottom: -100px; /* Espacio debajo del botón para separar del título */
+    left: 440px;
+    top: 50px;
+}
+
+.home-image-section {
+    top: 30px;
+    position: absolute;
+    max-width: 55%;
+    width: 100%; /* Ancho específico */
+    height: 100%; /* Altura específica */
     overflow: hidden;
+    flex: 1;
+    margin-left: 830px; /* Ajusta el margen para mover el contenedor a la derecha */
+    /* O usa transform para un movimiento más preciso */
+    /* transform: translateX(50px); */
 }
 
 .home-image-section img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1000;
     width: 100%;
     height: 100%;
     object-fit: contain;
     /* Ajusta la imagen para cubrir el contenedor sin recortar de manera desigual */
 }
-
-.home-image-section {
-    max-width: 600px;
-    flex: 1;
-  }

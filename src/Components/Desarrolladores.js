@@ -5,6 +5,7 @@ import ProfileJhon from "../Assets/Desarrolladores/Jhon.png";
 import ProfileSantiago from "../Assets/Desarrolladores/Santiago.png";
 import { AiFillStar } from "react-icons/ai";
 import { Carousel } from 'primereact/carousel';
+import "../css/Desarrolladores.css"
 
 const developers = [
   {
@@ -67,7 +68,7 @@ const itemTemplate = (item) => {
 
 const Testimonial = () => {
   return (
-    <div className="work-section-wrapper">
+    <div className="work-section-wrapper" id="desarrolladores">
       <div className="work-section-top">
         <h1 className="primary-heading">Desarrolladores</h1>
       </div>

@@ -3,6 +3,7 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import "../css/AtencionCliente.css"
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className="info-sections">
         <div className="info-section horarios-section">
           <h3 className="horarios">Horarios de atención</h3>
-          <div className="footer-section-two">
+          <div className="">
             <div className="footer-section-columns">
               <span>Lunes - Sábado</span>
             </div>
@@ -22,10 +23,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="info-section contacto-section">
+        <div className="info-section ">
           <h3 className="horarios">Contacto</h3>
           <div className="footer-section-two">
-            <div className="footer-section-columns">
+            <div className="">
               <span>Teléfono</span>
               <span>Email</span>
               <span>Dirección</span>
