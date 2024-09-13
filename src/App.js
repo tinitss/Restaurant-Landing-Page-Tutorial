@@ -2,8 +2,8 @@ import "./App.css";
 import Inventario from "./Components/Inventario";
 import Ingresos from "./Components/Ingresos";
 import Reservas from "./Components/Reservas";
-import Testimonial from "./Components/Testimonial";
-import Contact from "./Components/Contact";
+import Desarrolladores from "./Components/Desarrolladores";
+import Contacto from "./Components/Contacto";
 import AtencionCliente from "./Components/AtencionCliente";
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <Inventario />
       <Ingresos />
       <Reservas />
-      <Testimonial />
-      <Contact />
+      <Desarrolladores />
+      <Contacto />
       <AtencionCliente />
     </div>
   );

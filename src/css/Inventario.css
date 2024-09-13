@@ -1,0 +1,44 @@
+.home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+}
+
+.home-bannerImage-container img {
+    width: 1000px !important;
+    /* Ajusta el ancho específico a 1000px */
+    height: 1200px !important;
+    /* Ajusta la altura específica a 750px */
+}
+
+.home-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+}
+
+.home-image-section {
+    position: relative;
+    width: 1000px;
+    /* Ajusta el ancho según necesites */
+    height: 500px;
+    /* Ajusta la altura según necesites */
+    overflow: hidden;
+}
+
+.home-image-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ajusta la imagen para cubrir el contenedor sin recortar de manera desigual */
+}
+
+.home-image-section {
+    max-width: 600px;
+    flex: 1;
+  }

@@ -52,7 +52,15 @@ const Navbar = () => {
 
 
       <div className="navbar-links-container">
-        <a href="">Atención al cliente</a>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("atencion-cliente").scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Atención al cliente
+        </a>
         {/* <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a> */}

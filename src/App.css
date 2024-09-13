@@ -1,15 +1,41 @@
+/* Importar los temas de PrimeReact */
+@import 'primereact/resources/themes/saga-blue/theme.css';
+/* Puedes elegir otro tema de PrimeReact */
+@import 'primereact/resources/primereact.min.css';
+
+/* Importar los íconos de PrimeIcons */
+@import 'primeicons/primeicons.css';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
+
 .header-container {
   display: flex;
-  align-items: center; /* Alinea verticalmente */
-  justify-content: space-between; /* Espacio entre el logo y el título */
-  padding: 0 2rem; /* Ajusta el relleno según sea necesario */
+  align-items: center;
+  /* Alinea verticalmente */
+  justify-content: space-between;
+  /* Espacio entre el logo y el título */
+  padding: 0 2rem;
+  /* Ajusta el relleno según sea necesario */
   position: relative;
+}
+
+.span-terms {
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.span-terms span {
+  margin: -3px 0;
+  /* Ajusta el margen superior e inferior para reducir el espacio */
 }
 
 .nav-logo-container {
@@ -18,62 +44,18 @@
 }
 
 .nav-logo-container img {
-  width: 50px; /* Ajusta el tamaño del logo según sea necesario */
-  height: auto; /* Mantiene la proporción del logo */
+  width: 50px;
+  /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  /* Mantiene la proporción del logo */
 }
 
 .felysoft {
   left: 200px;
-  font-size: 30px; /* Tamaño de fuente fijo */
+  font-size: 30px;
+  /* Tamaño de fuente fijo */
 }
 
-
-.home-bannerImage-container img {
-  width: 1000px !important; /* Ajusta el ancho específico a 1000px */
-  height: 1200px !important; /* Ajusta la altura específica a 750px */
-}
-.reserva-image-section {
-  position: relative;
-  width: 1000px; /* Ajusta el ancho según necesites */
-  height: 500px; /* Ajusta la altura según necesites */
-  overflow: hidden;
-}
-.reserva-image-section img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ajusta la imagen para cubrir el contenedor sin recortar de manera desigual */
-}
-
-.home-image-section {
-  position: relative;
-  width: 1000px; /* Ajusta el ancho según necesites */
-  height: 500px; /* Ajusta la altura según necesites */
-  overflow: hidden;
-}
-.home-image-section img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ajusta la imagen para cubrir el contenedor sin recortar de manera desigual */
-}
-
-.about-section-image-container img{
-  width: 10 00px !important; /* Ajusta el ancho específico a 1000px */
-  height: 500px !important; /* Ajusta la altura específica a 750px */
-}
-
-/* .about-section-image-container {
-  position: absolute;
-  top: -100px;
-  right: -170px;
-  z-index: -2;
-  max-width: 700px;
-} */
 
 
 .reserva-bannerImage-container {
@@ -84,10 +66,12 @@
   max-width: 700px;
 }
 
-.reserva-bannerImage-container img{
-  width: 10 00px !important; /* Ajusta el ancho específico a 1000px */
-  height: 500px !important; /* Ajusta la altura específica a 750px */
-} 
+.reserva-bannerImage-container img {
+  width: 10 00px !important;
+  /* Ajusta el ancho específico a 1000px */
+  height: 500px !important;
+  /* Ajusta la altura específica a 750px */
+}
 
 .App {
   min-height: 100vh;
@@ -95,6 +79,7 @@
   max-width: 1900px;
   margin: 0rem auto;
 }
+
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -110,9 +95,11 @@ nav {
   justify-content: space-between;
   min-height: 90px;
 }
+
 .navbar-menu-container {
   display: none;
 }
+
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
@@ -120,6 +107,7 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: rgb(52, 117, 202);
@@ -132,106 +120,34 @@ nav {
   font-weight: 600;
   transition: 0.2s;
 }
+
 .navbar-cart-icon {
   font-size: 1.15rem;
 }
+
 .primary-button:hover {
   color: #484848;
   background-color: rgb(234, 234, 234);
 }
+
 .navbar-menu-container svg {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.home-banner-container {
-  position: relative;
-  display: flex;
-  padding-top: 3rem;
-}
-.home-bannerImage-container {
-  position: absolute;
-  top: -100px;
-  right: -170px;
-  z-index: -2;
-  max-width: 700px;
-}
-.home-image-section {
-  max-width: 600px;
-  flex: 1;
-}
-.home-text-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.primary-heading {
-  font-size: clamp(3rem, 4vw, 3rem);
-  color: #4c4c4c;
-  /* line-height: 5rem; */
-  max-width: 600px;
-}
-.primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  max-width: 500px;
-  color: #6a6a6a;
-  margin: 1.5rem 0rem;
-}
-.secondary-button {
-  padding: 1rem 2.5rem;
-  background-color: rgb(52, 117, 202);
-  outline: none;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: 600;
-  color: white;
-  transition: 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.secondary-button svg {
-  margin-left: 0.75rem;
-  font-size: 1.5rem;
-}
-.secondary-button:hover {
-  color: #484848;
-  background-color: rgb(221, 221, 221);
-}
-.about-section-container {
-  margin-top: 20rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.about-background-image-container {
-  position: absolute;
-  left: -150px;
-  z-index: -2;
-}
-.about-section-image-container {
-  flex: 0.9;
-  margin-right: 1rem;
-}
-.about-section-text-container {
-  flex: 1;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
+
+
+
+
+
+
+
+
 .primary-subheading {
   font-weight: 700;
   color: #fe9e0d;
   font-size: 1.15rem;
 }
-.about-buttons-container {
-  margin-top: 2rem;
-  display: flex;
-}
+
 .watch-video-button {
   margin-left: 2rem;
   background-color: transparent;
@@ -247,13 +163,16 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .watch-video-button svg {
   font-size: 3rem;
   margin-right: 1rem;
 }
+
 .contact-page-wrapper h1 {
   max-width: 900px !important;
 }
+
 .contact-page-wrapper {
   display: flex;
   align-items: center;
@@ -261,6 +180,7 @@ nav {
   flex-direction: column;
   margin: 6rem 0rem;
 }
+
 .contact-form-container {
   background-color: white;
   max-width: 700px;
@@ -271,6 +191,7 @@ nav {
   padding: 1rem;
   border-radius: 5rem;
 }
+
 .contact-form-container input {
   flex: 1;
   height: 100%;
@@ -279,41 +200,107 @@ nav {
   font-size: 1.3rem;
   padding: 0.5rem 1rem;
 }
+
 .footer-wrapper {
   margin: 6rem 0rem;
   display: flex;
   margin-top: 10rem;
 }
+
 .footer-logo-container {
   max-width: 110px;
 }
+
 .footer-icons {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente los íconos */
+  align-items: center;
+  /* Alinea verticalmente los íconos si es necesario */
   margin-top: 2.5rem;
 }
+
 .footer-icons svg {
   font-size: 1.5rem;
   margin-right: 1.25rem;
   color: #585858;
 }
+
+.footer-icons svg:last-child {
+  margin-right: 0;
+}
+
 /* .footer-section-one {
   border: 2px solid blue;
 } */
-.footer-section-two {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+.horarios {
+  font-size: 1.2rem;
+  /* Ajusta el tamaño de fuente según sea necesario */
+  margin: 1rem 0;
+  /* Añade espacio arriba y abajo */
+  color: #4c4c4c;
+  /* Ajusta el color según el diseño */
+  text-align: center;
+  /* Centra el texto dentro del elemento */
+  justify-content: space-between;
 }
+
+.footer-section-two {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* Dos columnas: una para las etiquetas, otra para los valores */
+  gap: 1rem;
+  /* Espacio entre columnas */
+  margin-bottom: 2rem;
+  /* Añade espacio abajo si es necesario */
+  left: auto;
+}
+
 .footer-section-columns {
   display: flex;
   flex-direction: column;
-  min-width: 190px;
+  /* Apila los elementos verticalmente */
 }
+
 .footer-section-columns span {
-  margin: 0.25rem 0rem;
-  font-weight: 600;
-  color: #4c4c4c;
-  cursor: pointer;
+  margin: 0.5rem 0;
+  /* Añade espacio vertical entre los elementos */
+  color: #6a6a6a;
+  /* Ajusta el color según el diseño */
 }
+
+.footer-section-two {
+  display: flex;
+  justify-content: space-between;
+  /* Espacio entre las columnas */
+  /* Alinea verticalmente los elementos al centro */
+}
+
+.footer-section-two .footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  /* Espacio entre filas dentro de cada columna */
+}
+
+/* Añadir margen a las columnas para reducir el espacio entre ellas */
+.footer-section-two .footer-section-columns:not(:last-child) {
+  margin-right: 0.5rem;
+  /* Ajusta este valor para reducir el espacio entre columnas */
+}
+
+/**/
+.info-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.info-section {
+  flex: 1;
+  margin: 0 3rem;
+}
+
 .testimonial-section-bottom {
   margin-top: 2rem;
   background-color: white;
@@ -326,9 +313,11 @@ nav {
   flex-direction: column;
   text-align: center;
 }
+
 .testimonial-section-bottom {
   margin: 2rem auto;
 }
+
 .testimonial-section-bottom p {
   font-weight: 700;
   color: #515151;
@@ -336,30 +325,37 @@ nav {
   font-size: 1.1rem;
   margin: 2rem 0rem;
 }
+
 .testimonials-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
   color: #fe9e0d;
 }
+
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;
 }
+
 .work-section-wrapper {
   margin-top: 15rem;
 }
+
 .work-section-top p {
   text-align: center;
   max-width: 600px !important;
 }
+
 .work-section-top h1 {
   max-width: 700px !important;
 }
+
 .work-section-top {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .work-section-info {
   width: 290px;
   min-height: 350px;
@@ -374,9 +370,11 @@ nav {
   color: #505050;
   margin: 1rem 2rem;
 }
+
 .work-section-info h2 {
   margin: 1rem 0rem;
 }
+
 .work-section-bottom {
   margin-top: 5rem;
   display: flex;
@@ -384,6 +382,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .work-section-info p {
   flex: 1;
   display: flex;
@@ -393,101 +392,130 @@ nav {
 
 @media (max-width: 1200px) {
   .header-container {
-    justify-content: center; /* Centra el contenido en pantallas medianas */
+    justify-content: center;
+    /* Centra el contenido en pantallas medianas */
   }
+
   .felysoft {
-    font-size: 30px; /* Ajusta el tamaño de la fuente si es necesario */
+    font-size: 30px;
+    /* Ajusta el tamaño de la fuente si es necesario */
   }
+
   .navbar-links-container a {
     margin-right: 1rem;
     font-size: 1rem;
   }
+
   .primary-button {
     font-size: 1rem;
   }
-  
+
 }
 
 @media (max-width: 800px) {
   .header-container {
-    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-    align-items: center; /* Centra el contenido horizontalmente */
-    text-align: center; /* Centra el texto */
+    flex-direction: column;
+    /* Cambia a columna en pantallas más pequeñas */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Centra el texto */
   }
+
   .felysoft {
-    font-size: 30px; /* Ajusta el tamaño de la fuente si es necesario */
-    margin-top: 1rem; /* Añade espacio entre el logo y el título */
+    font-size: 30px;
+    /* Ajusta el tamaño de la fuente si es necesario */
+    margin-top: 1rem;
+    /* Añade espacio entre el logo y el título */
   }
-  
+
   .navbar-links-container {
     display: none;
   }
+
   .navbar-menu-container {
     display: flex;
   }
+
   .home-bannerImage-container {
     max-width: 450px;
   }
+
   .home-banner-container,
   .about-section-container {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
+
   .about-section-container {
     flex-direction: column;
   }
+
   .home-image-section,
   .about-section-image-container {
     width: 100%;
     max-width: 400px;
   }
+
   .primary-heading {
     text-align: center;
     max-width: 90%;
   }
+
   .primary-text {
     text-align: center;
     max-width: 80%;
   }
+
   .home-text-section,
   .about-section-text-container {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
   }
+
   .secondary-button {
     font-size: 1rem;
     padding: 0.8rem 2rem;
     cursor: pointer;
   }
+
   .about-section-container {
     margin-top: 5rem !important;
   }
+
   .about-buttons-container {
     justify-content: center;
     flex-direction: column;
   }
+
   .primary-subheading {
     text-align: center;
   }
+
   .watch-video-button {
     margin-left: 0rem !important;
     margin-top: 1rem;
     font-size: 1rem !important;
   }
+
   .watch-video-button svg {
     margin-right: 0.5rem !important;
   }
+
   .about-section-image-container {
     margin-right: 0rem !important;
   }
+
   .work-section-wrapper {
     margin-top: 5rem !important;
   }
+
   .work-section-bottom {
     margin-top: 1rem !important;
   }
+
   .contact-form-container {
     padding: 0.5rem !important;
     flex-direction: column;
@@ -495,6 +523,7 @@ nav {
     align-items: center;
     border-radius: 1rem !important;
   }
+
   .contact-form-container input {
     font-size: 1rem !important;
     max-width: 100%;
@@ -502,24 +531,31 @@ nav {
     margin-bottom: 0.8rem !important;
     text-align: center;
   }
+
   .footer-wrapper {
     flex-direction: column;
   }
+
   .footer-section-two {
     flex-direction: column;
     margin-top: 2rem;
   }
+
   .footer-section-columns {
     margin: 1rem 0rem;
   }
+
   .App {
     max-width: 95vw;
   }
 }
+
 @media (max-width: 600px) {
   .felysoft {
-    font-size: 30px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+    font-size: 30px;
+    /* Tamaño de fuente más pequeño para pantallas más pequeñas */
   }
+
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;

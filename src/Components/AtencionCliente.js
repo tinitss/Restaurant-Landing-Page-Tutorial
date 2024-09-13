@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../Assets/Logo.svg";
 import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
@@ -7,44 +6,52 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="contact-page-wrapper">
+    <div className="contact-page-wrapper" id="atencion-cliente">
       <h1 className="primary-heading">Atención al cliente</h1>
 
-      <div className="footer-wrapper">
-      <div className="footer-section-one">
-        {/* <div className="footer-logo-container">
-          <img src={Logo} alt="" />
-        </div> */}
+      <div className="info-sections">
+        <div className="info-section horarios-section">
+          <h3 className="horarios">Horarios de atención</h3>
+          <div className="footer-section-two">
+            <div className="footer-section-columns">
+              <span>Lunes - Sábado</span>
+            </div>
+            <div className="footer-section-columns">
+              <span>8am - 5pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="info-section contacto-section">
+          <h3 className="horarios">Contacto</h3>
+          <div className="footer-section-two">
+            <div className="footer-section-columns">
+              <span>Teléfono</span>
+              <span>Email</span>
+              <span>Dirección</span>
+            </div>
+            <div className="footer-section-columns">
+              <span>(+57) 319-697-8413</span>
+              <span>felysoft_atencionCliente@gmail.com</span>
+              <span>Calle 25 D Bis 96-58 (Bogotá - Colombia)</span>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div className="footer-section-two">
-        <div className="footer-section-columns">
-          <span className="horarios">Horarios de atención</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
-          <span>Work</span>
-        </div>
-        <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@food.com</span>
-          <span>press@food.com</span>
-          <span>contact@food.com</span>
-        </div>
-        <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
-        </div>
+
+      <div className="span-terms">
+        <span>Términos y condiciones</span>
+        <span>Politicas de privacidad</span>
       </div>
-    </div>
+
+
       <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
-        </div>
-    
+        <BsTwitter />
+        <SiLinkedin />
+        <BsYoutube />
+        <FaFacebookF />
+      </div>
+
     </div>
   );
 };

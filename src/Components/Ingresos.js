@@ -1,6 +1,7 @@
 import React from "react";
-import AboutBackground from "../Assets/about-background.png";
-import AboutBackgroundImage from "../Assets/about-background-image.png";
+import AboutBackground from "../Assets/Fondos/Fondo1.png";
+import AboutBackgroundImage from "../Assets/Imagenes_Sistema/InvetarioProductos.png";
+import "../css/Ingresos.css";
 import { FiArrowRight } from "react-icons/fi";
 
 const About = () => {
