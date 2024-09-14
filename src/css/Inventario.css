@@ -30,6 +30,7 @@
 }
 
 .primary-heading-inventario {
+    line-height: 1.2;
     position: relative;
     text-align: center; /* Centra el texto */
     width: 100%; /* Define un ancho específico */

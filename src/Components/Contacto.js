@@ -5,14 +5,19 @@ import "../css/Contacto.css";
 const Contact = () => {
   return (
     <div className="contact-page-wrapper">
-      <h1 className="primary-heading">Tienes preguntas?</h1>
-      <p className="primary-text">
+      <h1 className="primary-heading-contacto">¿Tienes preguntas?</h1>
+      <p className="primary-text-contacto">
         Deja tus datos y nos pondremos en contacto contigo, buen día.
       </p>
-      <div className="contact-form-container">
+
+      <div className="input-email">
         <input type="text" placeholder="juanito@gmail.com" />
-        <button className="secondary-button">Enviar</button>
       </div>
+      <div className="preguntas">
+        <input type="text" placeholder="Hola, tengo una pregunta.." />
+        <button className="secondary-button-contacto">Enviar</button>
+      </div>
+      
       
     </div>
   );

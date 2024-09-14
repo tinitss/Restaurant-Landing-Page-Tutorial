@@ -4,26 +4,28 @@ import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import "../css/AtencionCliente.css"
+import { Splitter, SplitterPanel } from 'primereact/splitter';
 
 const Footer = () => {
   return (
-    <div className="contact-page-wrapper" id="atencion-cliente">
-      <h1 className="primary-heading">Atención al cliente</h1>
+    <div className="page-wrapper-atencion" id="atencion-cliente">
+      <h1 className="primary-heading-atencion">Atención al cliente</h1>
 
-      <div className="info-sections">
-        <div className="info-section horarios-section">
+      <div className="info-sections-atencion">
+      <Splitter style={{ height: '300px', width: '1000px'}}>
+        <SplitterPanel className="flex align-items-center justify-content-center">
+        
           <h3 className="horarios">Horarios de atención</h3>
-          <div className="">
-            <div className="footer-section-columns">
+            <div className="footer-section-columns-horario">
               <span>Lunes - Sábado</span>
             </div>
-            <div className="footer-section-columns">
+            <div className="footer-section-horario">
               <span>8am - 5pm</span>
             </div>
-          </div>
-        </div>
+        </SplitterPanel>
 
-        <div className="info-section ">
+        <SplitterPanel className="flex align-items-center justify-content-center">
+          <div className="contacto-section">
           <h3 className="horarios">Contacto</h3>
           <div className="footer-section-two">
             <div className="">
@@ -38,7 +40,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </SplitterPanel>
+      </Splitter>
+
       </div>
+   
+
+        
 
       <div className="span-terms">
         <span>Términos y condiciones</span>
@@ -52,7 +60,7 @@ const Footer = () => {
         <BsYoutube />
         <FaFacebookF />
       </div>
-
+      
     </div>
   );
 };

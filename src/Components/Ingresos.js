@@ -16,10 +16,10 @@ const About = () => {
       </div>
       <div className="about-section-text-container">
         <h1 className="primary-heading-ingresos">
-          Visión clara de tus finanzas, informes detallados para decisiones estratégicas.
+          Visión clara de tus finanzas, informes detallados para decisiones estratégicas
         </h1>
         <p className="primary-text-ingresos">
-          Gestiona tus ingresos con datos financieros claros y accesibles: análisis profundos y reportes que facilitan la toma de decisiones.
+          Gestiona tus ingresos con datos financieros claros y accesibles: análisis profundos y reportes que facilitan la toma de decisiones
         </p>
         <div className="secondary-button-ingresos">
           <button className="secondary-button-ingreso">

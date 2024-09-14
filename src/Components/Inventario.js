@@ -15,10 +15,10 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading-inventario">
-            Digitaliza y optimiza la gestión de tu inventario sin complicaciones.
+            Digitaliza y optimiza la gestión de tu inventario sin complicaciones
           </h1>
           <p className="primary-text-inventario">
-            Administra tu inventario con precisión y sin esfuerzo: controla existencias, evita faltantes y optimiza tu flujo de productos.
+            Administra tu inventario con precisión y sin esfuerzo: controla existencias, evita faltantes y optimiza tu flujo de productos
           </p>
           <div className="secondary-button-inventario">
             <button className="secondary-button">

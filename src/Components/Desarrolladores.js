@@ -70,7 +70,7 @@ const Testimonial = () => {
   return (
     <div className="work-section-wrapper" id="desarrolladores">
       <div className="work-section-top">
-        <h1 className="primary-heading">Desarrolladores</h1>
+        <h1 className="primary-heading-desarrolladores">Desarrolladores</h1>
       </div>
       <Carousel
         value={developers}
@@ -79,10 +79,12 @@ const Testimonial = () => {
         responsiveOptions={responsiveOptions}
         className="custom-carousel"
         circular
-        autoplayInterval={3000}
+        autoplayInterval={3500}
         itemTemplate={itemTemplate}
       />
+      <hr className="separator-line" />
     </div>
+    
   );
 };
 

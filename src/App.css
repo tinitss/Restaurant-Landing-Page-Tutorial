@@ -15,10 +15,10 @@
 
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: rgb(52, 117, 202);
+  background-color: rgb(25, 87, 168);
   outline: none;
   border: none;
-  border-radius: 5rem;
+  border-radius: 10px;
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
@@ -78,11 +78,11 @@ nav {
 
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: rgb(52, 117, 202);
+  background-color: rgb(25, 87, 168);
   color: #f6f6f6;
   outline: none;
   border: none;
-  border-radius: 5rem;
+  border-radius: 10px;
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;

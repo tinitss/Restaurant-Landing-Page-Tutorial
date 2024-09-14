@@ -9,18 +9,18 @@
 }
 
 /* Fondo */
-.about-background-image-container img {
-  width: 280px !important;
-  height: 900px !important;
-  transform: rotate(-7deg); /* Rotar la imagen en 10 grados */
-}
-
 .about-background-image-container {
   position: absolute;
   left: -80px; /* Ajusta según el espacio que necesitas */
   z-index: -2;
   height: 750px; /* Aumenta la altura del contenedor */
   
+}
+
+.about-background-image-container img {
+  width: 280px !important;
+  height: 900px !important;
+  transform: rotate(-7deg); /* Rotar la imagen en 10 grados */
 }
 
 /* Imagen */
@@ -61,6 +61,7 @@
   left: 200px;
   top: 40px;
   word-spacing: 5px; /* Aumenta el espacio entre palabras */
+  line-height: 1.2;
 }
 
 .primary-text-ingresos {
@@ -81,10 +82,10 @@
 
 .secondary-button-ingreso {
   padding: 1rem 2.5rem; /* Ajusta el tamaño del botón */
-  background-color: rgb(52, 117, 202); /* Color de fondo */
+  background-color: rgb(25, 87, 168);
   outline: none; /* Sin contorno */
   border: none; /* Sin borde */
-  border-radius: 5rem; /* Bordes redondeados */
+  border-radius: 10px;
   font-size: 1.1rem; /* Tamaño de la fuente del texto */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   font-weight: 600; /* Grosor de la fuente */
