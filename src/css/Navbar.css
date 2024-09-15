@@ -15,14 +15,15 @@
     left: 70px;
     font-size: 30px;
     justify-content: flex-start; /* Alinea el logo hacia la izquierda */
-    /* Tamaño de fuente fijo */
+    color: black; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 .navbar-links-container {
     margin-left: 400px;
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 900;
 }
 

@@ -44,11 +44,23 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+      <div className="nav-logo-container" id="navbar">
+      <a  href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("navbar").scrollIntoView({ behavior: "smooth" });
+          }}>
+            <img src={Logo} alt="Logo" />
+        </a>
       </div>
       <div className="felysoft">
-        <h1>FELYSOFT</h1>
+      <a  href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("navbar").scrollIntoView({ behavior: "smooth" });
+          }}>
+            <h1>FELYSOFT</h1>
+        </a>
       </div>
 
       <div className="navbar-links-container">

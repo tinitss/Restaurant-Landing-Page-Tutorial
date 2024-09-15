@@ -14,7 +14,7 @@ const Contact = () => {
         <input type="text" placeholder="juanito@gmail.com" />
       </div>
       <div className="preguntas">
-        <input type="text" placeholder="Hola, tengo una pregunta.." />
+        <input type="text" placeholder="Hola, tengo una pregunta..." />
         <button className="secondary-button-contacto">Enviar</button>
       </div>
       
